@@ -30,7 +30,7 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Cambo" rel="stylesheet">
     <!-- Bootstrap CSS File -->
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link href="/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -50,12 +50,10 @@
             <div class="wow fadeIn">
                 <div class="hero-logo">
                     {{--  <img class="" src="/img/ngt.png" alt="ngt">  --}}
-                    <h1><a href="#">New General Trade</a></h1>
+                    <h1>New General Trade</h1>
                 </div>
-
-                <h1>Leading tire importer and distributer</h1>
-                <h2>We create
-                    <span class="rotating">beautiful graphics, functional websites, working mobile apps</span>
+                <h2>Leading tire
+                    <span class="rotating">importer, distributer</span>
                 </h2>
                 <div class="actions">
                     <a href="#about" class="btn-get-started">Get Strated</a>
