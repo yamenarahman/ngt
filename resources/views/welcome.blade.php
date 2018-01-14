@@ -22,6 +22,9 @@
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="">
 
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
     <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
     <link href="favicon.ico" rel="shortcut icon">
 
@@ -46,8 +49,8 @@
         <div class="hero-container">
             <div class="wow fadeIn">
                 <div class="hero-logo">
-                    <img class="" src="img/logo.png" alt="Imperial">
-                    {{--  <h1><a href="">New General Trade</a></h1>  --}}
+                    {{--  <img class="" src="/img/ngt.png" alt="ngt">  --}}
+                    <h1><a href="#">New General Trade</a></h1>
                 </div>
 
                 <h1>Leading tire importer and distributer</h1>
@@ -263,11 +266,11 @@
                         more!</p>
                 </div>
                 <div class="col-md-4 subscribe-btn-container">
-                    <form action="" method="">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"/>
-                        <div class="validation"></div>
+                    <form action="{{ url('/subscribe') }}" method="POST" id="subscription-form">
+                        {{ csrf_field() }}
+                        <input type="email" class="form-control" name="email" id="subscriber-email" placeholder="Your Email" required>
                     </form>
-                    <a type="submit" class="subscribe-btn">Subscribe to newsletter</a>
+                    <a class="subscribe-btn" onclick="subscribe()">Subscribe to newsletter</a>
                 </div>
             </div>
         </div>
@@ -551,24 +554,22 @@
                     <div class="form">
                         <div id="sendmessage">Your message has been sent. Thank you!</div>
                         <div id="errormessage"></div>
-                        <form action="" method="post" role="form" class="contactForm">
+                        <form action="{{ url('/sendmessage') }}" method="POST" role="form" class="contactForm">
+                            {{ csrf_field() }}
                             <div class="form-group">
-                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars"
-                                />
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
                                 <div class="validation"></div>
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email"
-                                />
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required>
                                 <div class="validation"></div>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject"
-                                />
+                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" required>
                                 <div class="validation"></div>
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                                <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us" placeholder="Message" required></textarea>
                                 <div class="validation"></div>
                             </div>
                             <div class="text-center">
@@ -618,6 +619,42 @@
     <script src="/js/custom.js"></script>
     <script src="/js/contactform.js"></script>
     <script src="/js/bootstrap-popover-x.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        function subscribe() {
+            var email = $('#subscriber-email');
+            if(email.val() == '') {
+                swal("Ops!", "Please fill your email!", "error");
+            } else {
+                event.preventDefault();
+                $('#subscription-form').submit();
+            }
+        }
+
+        function validateEmail (email) {
+
+        }
+    </script>
 </body>
 
 </html>
+
+{{--  function validateEmail(email) {
+  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(email);
+}
+
+function validate() {
+  $("#result").text("");
+  var email = $("#email").val();
+  if (validateEmail(email)) {
+    $("#result").text(email + " is valid :)");
+    $("#result").css("color", "green");
+  } else {
+    $("#result").text(email + " is not valid :(");
+    $("#result").css("color", "red");
+  }
+  return false;
+}
+
+$("#validate").bind("click", validate);  --}}

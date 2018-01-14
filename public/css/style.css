@@ -17,14 +17,14 @@ body {
 }
 
 a {
-    color: #03C4EB;
+    color: rgb(235, 3, 3);
     transition: 0.5s;
 }
 
 a:hover,
 a:active,
 a:focus {
-    color: #03c5ec;
+    color: rgb(235, 3, 3);
     outline: none;
     text-decoration: none;
 }
@@ -89,7 +89,7 @@ h6 {
 }
 
 .back-to-top:hover {
-    background: #03C4EB;
+    background: rgb(235, 3, 3);
     color: #fff;
 }
 
@@ -172,8 +172,8 @@ h6 {
 }
 
 #hero .btn-get-started {
-    background: #03C4EB;
-    border: 2px solid #03C4EB;
+    background: rgb(235, 3, 3);
+    border: 2px solid rgb(235, 3, 3);
     color: #fff;
 }
 
@@ -189,8 +189,8 @@ h6 {
 }
 
 #hero .btn-services:hover {
-    background: #03C4EB;
-    border: 2px solid #03C4EB;
+    background: rgb(235, 3, 3);
+    border: 2px solid rgb(235, 3, 3);
 }
 
 
@@ -343,7 +343,7 @@ h6 {
 .nav-menu a:hover,
 .nav-menu li:hover>a,
 .nav-menu .menu-active>a {
-    color: #03C4EB;
+    color: rgb(235, 3, 3);
 }
 
 .nav-menu ul {
@@ -455,11 +455,11 @@ h6 {
 }
 
 #mobile-nav ul .menu-has-children i.fa-chevron-up {
-    color: #03C4EB;
+    color: rgb(235, 3, 3);
 }
 
 #mobile-nav ul .menu-item-active {
-    color: #03C4EB;
+    color: rgb(235, 3, 3);
 }
 
 #mobile-body-overly {
@@ -513,7 +513,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .section-title-divider {
     width: 50px;
     height: 3px;
-    background: #03C4EB;
+    background: rgb(235, 3, 3);
     margin: 0 auto;
     margin-bottom: 20px;
 }
@@ -528,7 +528,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-container {
-    background: url(../img/about-img.jpg) left top no-repeat;
+    background: url(../img/ngt-bg.jpg) left top no-repeat;
+    /* background-size: cover; */
 }
 
 #about .about-content {
@@ -565,11 +566,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #services .service-icon {
     float: left;
-    background: #03C4EB;
+    background: rgb(235, 3, 3);
     padding: 16px;
     border-radius: 50%;
     transition: 0.5s;
-    border: 1px solid #03C4EB;
+    border: 1px solid rgb(235, 3, 3);
 }
 
 #services .service-icon i {
@@ -582,7 +583,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #services .service-item:hover .service-icon i {
-    color: #03C4EB;
+    color: rgb(235, 3, 3);
 }
 
 #services .service-title {
@@ -642,8 +643,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #subscribe .subscribe-btn:hover {
-    background: #03C4EB;
-    border: 2px solid #03C4EB;
+    background: rgb(235, 3, 3);
+    border: 2px solid rgb(235, 3, 3);
 }
 
 
@@ -741,7 +742,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #testimonials .profile h4 {
     font-weight: 700;
-    color: #03C4EB;
+    color: rgb(235, 3, 3);
     margin-bottom: 5px;
 }
 
@@ -818,7 +819,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #team .member .social a:hover {
-    color: #03C4EB;
+    color: rgb(235, 3, 3);
 }
 
 #team .member .social i {
@@ -841,7 +842,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact .info i {
     font-size: 32px;
-    color: #03C4EB;
+    color: rgb(235, 3, 3);
     float: left;
 }
 
@@ -851,8 +852,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .form #sendmessage {
-    color: #03C4EB;
-    border: 1px solid #03C4EB;
+    color: rgb(235, 3, 3);
+    border: 1px solid rgb(235, 3, 3);
     display: none;
     text-align: center;
     padding: 15px;
@@ -891,7 +892,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .form button[type="submit"] {
-    background: #03C4EB;
+    background: rgb(235, 3, 3);
     border: 0;
     padding: 10px 24px;
     color: #fff;

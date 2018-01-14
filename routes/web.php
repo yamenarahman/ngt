@@ -11,6 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::view('/', 'welcome');
+
+Auth::routes();
+
+Route::redirect('/register', '/login');
+Route::get('/home', 'HomeController@index')->name('home');
+Route::post('/subscribe', 'SubscriptionsController@store');
+Route::post('/sendmessage', 'MessagesController@store');
