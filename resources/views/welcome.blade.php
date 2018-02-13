@@ -52,6 +52,7 @@
                     {{--  <img class="" src="/img/ngt.png" alt="ngt">  --}}
                     <h1>New General Trade</h1>
                 </div>
+                <h2>A <strong>Family-Based</strong> Corporation</h2>
                 <h2>Leading tire
                     <span class="rotating">importer, distributer</span>
                 </h2>
@@ -161,7 +162,7 @@
             <div class="row">
                 <div class="col-md-6 col-md-push-6 about-content">
                     <p class="about-text">
-                        <strong>New General Trade</strong> is a subsidiary sharing association company on family business that was established on 2008 under the umbrella of the <strong>Fouad Nassar</strong> companies that started during the 1940s.
+                        <strong>New General Trade</strong> is a subsidiary sharing association company on family basis that was established on 2008 under the umbrella of the <strong>Fouad Nassar</strong> companies that started during the 1940s.
                     </p>
                     <p class="about-text">
                         <strong>Mr. Fouad Nassar</strong> started working in the tire business in Egypt by buying and re-selling old and used tires in several Egyptian governances. By 1958, Mr. Fouad Nassar started trading and retailing in brand new tires specializing in TBB and OTR tires.
@@ -177,76 +178,74 @@
         </div>
     </section>
 
-    <!--==========================
-  Services Section
+<!--==========================
+  Products Section
   ============================-->
-    <section id="services">
+    <section id="portfolio">
         <div class="container wow fadeInUp">
             <div class="row">
                 <div class="col-md-12">
-                    <h3 class="section-title">Our Services</h3>
+                    <h3 class="section-title">Products</h3>
                     <div class="section-title-divider"></div>
-                    <p class="section-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                    <p class="section-description">New General Trade offers a variety of products</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 service-item">
-                    <div class="service-icon">
-                        <i class="fa fa-desktop"></i>
-                    </div>
-                    <h4 class="service-title">
-                        <a href="">Lorem Ipsum</a>
-                    </h4>
-                    <p class="service-description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
-                        non provident</p>
+                <div class="col-md-6">
+                    <a class="portfolio-item" style="background-image: url('/img/products/OTR.jpg');">
+                        <div class="details">
+                            <h4>OTR</h4>
+                            <span><strong>Experts</strong> in selling and advising the right industrial tires for different applications such as ports and factories.</span>
+                            <span><strong>Experts</strong> in selling and advising the right earthmoving tires for different applications such as quarries and mines.</span>
+                            <span><strong>Supplying</strong> and distributing the following brands: Bridgestone, Triangle, NGT Advance, Armour and Ornet Tires.</span>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-md-4 service-item">
-                    <div class="service-icon">
-                        <i class="fa fa-bar-chart"></i>
-                    </div>
-                    <h4 class="service-title">
-                        <a href="">Dolor Sitema</a>
-                    </h4>
-                    <p class="service-description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad
-                        limino ata</p>
+                <div class="col-md-6">
+                    <a class="portfolio-item" style="background-image: url('/img/products/TBB.jpg');">
+                        <div class="details">
+                            <h4>TBB/TBR</h4>
+                            <span><strong>Offering</strong> the best Sri Lankan bias tires from Ceat Factory: United Brand.</span>
+                            <span><strong>Selling</strong> the best innovative technology in radial tires from the following brands: Bridgestone, Pirelli, Pharos, Aeolus, Ornet and Kapsen.</span>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-md-4 service-item">
-                    <div class="service-icon">
-                        <i class="fa fa-paper-plane"></i>
-                    </div>
-                    <h4 class="service-title">
-                        <a href="">Sed ut perspiciatis</a>
-                    </h4>
-                    <p class="service-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                <div class="col-md-6">
+                    <a class="portfolio-item" style="background-image: url('/img/products/LTB.jpg');">
+                        <div class="details">
+                            <h4>LTB/LTR</h4>
+                            <span><strong>Exclusively</strong> offering the famous ORNET OR707 from India and United tires from Sri Lanka.</span>
+                            <span><strong>Distributing</strong> the famous Bridgestone and Maxxis tires, in addition to, Kapsen White Side Wall tires.</span>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-md-4 service-item">
-                    <div class="service-icon">
-                        <i class="fa fa-photo"></i>
-                    </div>
-                    <h4 class="service-title">
-                        <a href="">Magni Dolores</a>
-                    </h4>
-                    <p class="service-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                        laborum</p>
+                <div class="col-md-6">
+                    <a class="portfolio-item" style="background-image: url('/img/products/PCR.png');">
+                        <div class="details">
+                            <h4>PCR</h4>
+                            <span><strong>Expertly</strong> advising and selling the most suitable size and pattern for each car.</span>
+                            <span><strong>Distributing</strong> Bridgestone and Sumitimo in the UHP category.</span>
+                            <span><strong>Supplying</strong> economic tires from Habilead, United, GT and Kumho.</span>
+                            <span><strong>For information</strong> on price and availability in Egypt call: 0224250807</span>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-md-4 service-item">
-                    <div class="service-icon">
-                        <i class="fa fa-road"></i>
-                    </div>
-                    <h4 class="service-title">
-                        <a href="">Nemo Enim</a>
-                    </h4>
-                    <p class="service-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
-                        atque</p>
+                <div class="col-md-6">
+                    <a class="portfolio-item" style="background-image: url('/img/products/3wheelers.jpg');">
+                        <div class="details">
+                            <h4>3 Wheelers</h4>
+                            <span><strong>Covering</strong> the market need through offering our own “AMMAR” and “Innovative” brands from India.</span>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-md-4 service-item">
-                    <div class="service-icon">
-                        <i class="fa fa-shopping-bag"></i>
-                    </div>
-                    <h4 class="service-title">
-                        <a href="">Eiusmod Tempor</a>
-                    </h4>
-                    <p class="service-description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+                <div class="col-md-6">
+                    <a class="portfolio-item" style="background-image: url('/img/products/agricultural.jpg');">
+                        <div class="details">
+                            <h4>Agricultural Tires</h4>
+                            <span><strong>Offering</strong> the most suitable tires and patterns to help the farming processes.</span>
+                            <span><strong>Selling</strong> the latest technology and premium quality tires of Nokian, Belshina, Ornet and Armour.</span>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -269,70 +268,6 @@
                         <input type="email" class="form-control" name="email" id="subscriber-email" placeholder="Your Email" required>
                     </form>
                     <a class="subscribe-btn" onclick="subscribe()">Subscribe to newsletter</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--==========================
-  Products Section
-  ============================-->
-    <section id="portfolio">
-        <div class="container wow fadeInUp">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3 class="section-title">Products</h3>
-                    <div class="section-title-divider"></div>
-                    <p class="section-description">New General Trade offers a variety of products</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3">
-                    <a class="portfolio-item" style="background-image: url(img/portfolio-1.jpg);">
-                        <div class="details">
-                            <h4>OTR</h4>
-                            <span><strong>Experts</strong> in selling and advising the right industrial tires for different applications such as ports and factories.</span>
-                            <span><strong>Experts</strong> in selling and advising the right earthmoving tires for different applications such as quarries and mines.</span>
-                            <span><strong>Supplying</strong> and distributing the following brands: Bridgestone, Triangle, NGT Advance, Armour and Ornet Tires.</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a class="portfolio-item" style="background-image: url(img/portfolio-2.jpg);">
-                        <div class="details">
-                            <h4>TBB/TBR</h4>
-                            <span><strong>Offering</strong> the best Sri Lankan bias tires from Ceat Factory: United Brand.</span>
-                            <span><strong>Selling</strong> the best innovative technology in radial tires from the following brands: Bridgestone, Pirelli, Pharos, Aeolus, Ornet and Kapsen.</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a class="portfolio-item" style="background-image: url(img/portfolio-3.jpg);">
-                        <div class="details">
-                            <h4>LTB/LTR</h4>
-                            <span><strong>Exclusively</strong> offering the famous ORNET OR707 from India and United tires from Sri Lanka.</span>
-                            <span><strong>Distributing</strong> the famous Bridgestone and Maxxis tires, in addition to, Kapsen White Side Wall tires.</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a class="portfolio-item" style="background-image: url(img/portfolio-4.jpg);">
-                        <div class="details">
-                            <h4>PCR</h4>
-                            <span><strong>Expertly</strong> advising and selling the most suitable size and pattern for each car.</span>
-                            <span><strong>Distributing</strong> Bridgestone and Sumitimo in the UHP category.</span>
-                            <span><strong>Supplying</strong> economic tires from Habilead, United, GT and Kumho.</span>
-                            <span><strong>For information</strong> on price and availability in Egypt call: 0224250807</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a class="portfolio-item" style="background-image: url(img/portfolio-5.jpg);">
-                        <div class="details">
-                            <h4>3 Wheelers</h4>
-                            <span><strong>Covering</strong> the market need through offering our own “AMMAR” and “Innovative” brands from India.</span>
-                        </div>
-                    </a>
                 </div>
             </div>
         </div>
@@ -401,7 +336,7 @@
     <!--==========================
   Team Section
   ============================-->
-    <section id="team">
+    <!-- <section id="team">
         <div class="container wow fadeInUp">
             <div class="row">
                 <div class="col-md-12">
@@ -505,7 +440,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!--==========================
   Contact Section
