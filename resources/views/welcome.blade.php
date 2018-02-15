@@ -59,7 +59,7 @@
                 </h2>
                 <div class="actions">
                     <a href="#about" class="btn-get-started">Get Strated</a>
-                    <a href="#services" class="btn-services">Our Services</a>
+                    <a href="#products" class="btn-services">Products</a>
                 </div>
             </div>
         </div>
@@ -86,7 +86,7 @@
                         <a href="#about">Who we are</a>
                     </li>
                     <li>
-                        <a href="#portfolio">Products</a>
+                        <a href="#products">Products</a>
                     </li>
                     <li>
                         <a href="#testimonials">Partners</a>
@@ -179,7 +179,7 @@
 <!--==========================
   Products Section
   ============================-->
-    <section id="portfolio">
+    <section id="products">
         <div class="container wow fadeInUp">
             <div class="row">
                 <div class="col-md-12">
@@ -190,7 +190,7 @@
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <a class="portfolio-item" style="background-image: url('/img/products/OTR.jpg');">
+                    <a class="products-item" style="background-image: url('/img/products/OTR.jpg');">
                         <div class="details">
                             <h4>OTR</h4>
                             <span><strong>Experts</strong> in selling and advising the right industrial tires for different applications such as ports and factories.</span>
@@ -200,7 +200,7 @@
                     </a>
                 </div>
                 <div class="col-md-6">
-                    <a class="portfolio-item" style="background-image: url('/img/products/TBB.jpg');">
+                    <a class="products-item" style="background-image: url('/img/products/TBB.jpg');">
                         <div class="details">
                             <h4>TBB/TBR</h4>
                             <span><strong>Offering</strong> the best Sri Lankan bias tires from Ceat Factory: United Brand.</span>
@@ -209,7 +209,7 @@
                     </a>
                 </div>
                 <div class="col-md-6">
-                    <a class="portfolio-item" style="background-image: url('/img/products/LTB.jpg');">
+                    <a class="products-item" style="background-image: url('/img/products/LTB.jpg');">
                         <div class="details">
                             <h4>LTB/LTR</h4>
                             <span><strong>Exclusively</strong> offering the famous ORNET OR707 from India and United tires from Sri Lanka.</span>
@@ -218,7 +218,7 @@
                     </a>
                 </div>
                 <div class="col-md-6">
-                    <a class="portfolio-item" style="background-image: url('/img/products/PCR.png');">
+                    <a class="products-item" style="background-image: url('/img/products/PCR.png');">
                         <div class="details">
                             <h4>PCR</h4>
                             <span><strong>Expertly</strong> advising and selling the most suitable size and pattern for each car.</span>
@@ -229,7 +229,7 @@
                     </a>
                 </div>
                 <div class="col-md-6">
-                    <a class="portfolio-item" style="background-image: url('/img/products/3wheelers.jpg');">
+                    <a class="products-item" style="background-image: url('/img/products/3wheelers.jpg');">
                         <div class="details">
                             <h4>3 Wheelers</h4>
                             <span><strong>Covering</strong> the market need through offering our own “AMMAR” and “Innovative” brands from India.</span>
@@ -237,7 +237,7 @@
                     </a>
                 </div>
                 <div class="col-md-6">
-                    <a class="portfolio-item" style="background-image: url('/img/products/agricultural.jpg');">
+                    <a class="products-item" style="background-image: url('/img/products/agricultural.jpg');">
                         <div class="details">
                             <h4>Agricultural Tires</h4>
                             <span><strong>Offering</strong> the most suitable tires and patterns to help the farming processes.</span>
