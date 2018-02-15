@@ -37,6 +37,7 @@
     <link href="/lib/animate-css/animate.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/bootstrap-popover-x.min.css') }}">
     <link href="/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
 </head>
 
 <body>
@@ -83,9 +84,6 @@
                     </li>
                     <li>
                         <a href="#about">Who we are</a>
-                    </li>
-                    <li>
-                        <a href="#services">Services</a>
                     </li>
                     <li>
                         <a href="#portfolio">Products</a>
@@ -274,9 +272,33 @@
     </section>
 
     <!--==========================
+  Suppliers Section
+  ============================-->
+  <section id="suppliers">
+      <div class="container wow fadeInUp">
+           <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Suppliers</h3>
+                    <div class="section-title-divider"></div>
+                </div>
+           </div>
+          <div class="row">
+              <div class="col-md-12">
+                <div class="suppliers-slider">
+                    <img src="/img/suppliers/Supplier1.png" alt="" class="supplier-logo">
+                    <img src="/img/suppliers/Supplier2.jpg" alt="" class="supplier-logo">
+                    <img src="/img/suppliers/Supplier3.jpg" alt="" class="supplier-logo">
+                    <img src="/img/suppliers/Supplier4.jpg" alt="" class="supplier-logo">
+                    <img src="/img/suppliers/Supplier5.png" alt="" class="supplier-logo">
+                </div>
+            </div>
+      </div>
+  </section>
+
+    <!--==========================
   Testimonials Section
   ============================-->
-    <section id="testimonials">
+    {{-- <section id="testimonials">
         <div class="container wow fadeInUp">
             <div class="row">
                 <div class="col-md-12">
@@ -331,7 +353,7 @@
             </div>
 
         </div>
-    </section>
+    </section> --}}
 
     <!--==========================
   Team Section
@@ -471,7 +493,7 @@
                         </div>
                         <div>
                             <i class="fa fa-envelope"></i>
-                            <p>marketing@ngtammar.com</p>
+                            <p>info@ngtammar.com</p>
                         </div>
                         <div>
                             <i class="fa fa-phone"></i>
@@ -553,6 +575,7 @@
     <script src="/js/contactform.js"></script>
     <script src="/js/bootstrap-popover-x.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
         function subscribe() {
             var email = $('#subscriber-email');
@@ -567,6 +590,36 @@
         function validateEmail (email) {
 
         }
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('.suppliers-slider').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: false,
+            dots: false,
+            pauseOnHover: false,
+            responsive: [{
+                breakpoint: 800,
+                settings: {
+                slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                slidesToShow: 2
+                }
+            }, {
+                breakpoint: 520,
+                settings: {
+                slidesToShow: 2
+                }
+            }]
+            });
+        });
     </script>
 </body>
 
