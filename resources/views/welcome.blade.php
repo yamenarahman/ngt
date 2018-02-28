@@ -159,12 +159,14 @@
         <div class="container about-container wow fadeInUp">
             <div class="row">
                 <div class="col-md-6 col-md-push-6 about-content">
+                    <img src="/img/fouad-nassar.jpg" class="img img-circle img-responsive pull-right" width="200px" height="200px">
                     <p class="about-text">
                         <strong>New General Trade</strong> is a subsidiary sharing association company on family basis that was established on 2008 under the umbrella of the <strong>Fouad Nassar</strong> companies that started during the 1940s.
                     </p>
                     <p class="about-text">
                         <strong>Mr. Fouad Nassar</strong> started working in the tire business in Egypt by buying and re-selling old and used tires in several Egyptian governances. By 1958, Mr. Fouad Nassar started trading and retailing in brand new tires specializing in TBB and OTR tires.
                     </p>
+                    <img src="/img/mohamed-nassar.jpg" class="img img-circle img-responsive pull-left" width="200px" height="200px">
                     <p class="about-text">
                         When his son, <strong>Mr. Mohamed</strong> joined the family business in 1984, a new strategy took place which aimed to expand the company’s practices in the tire business especially in importing tires and exporting to neighboring countries.
                     </p>
@@ -283,14 +285,14 @@
                 </div>
            </div>
           <div class="row">
-              <div class="col-md-12">
-                <div class="suppliers-slider">
+              <div class="col-md-12 suppliers-slider vcenter">
+                {{--  <div class="suppliers-slider">  --}}
                     <img src="/img/suppliers/Supplier1.png" alt="" class="supplier-logo">
                     <img src="/img/suppliers/Supplier2.jpg" alt="" class="supplier-logo">
                     <img src="/img/suppliers/Supplier3.jpg" alt="" class="supplier-logo">
                     <img src="/img/suppliers/Supplier4.jpg" alt="" class="supplier-logo">
                     <img src="/img/suppliers/Supplier5.png" alt="" class="supplier-logo">
-                </div>
+                {{--  </div>  --}}
             </div>
       </div>
   </section>
