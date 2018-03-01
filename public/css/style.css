@@ -725,9 +725,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .supplier-logo {
-    display: inline-block;
-    vertical-align: middle;
-    float: none;
+    height: 150px;
 }
 
 
@@ -939,10 +937,4 @@ body.mobile-nav-active #mobile-nav-toggle {
     text-align: center;
     font-size: 13px;
     color: #ccc;
-}
-
-.vcenter {
-    display: inline-block;
-    vertical-align: middle;
-    float: none;
 }

@@ -285,14 +285,14 @@
                 </div>
            </div>
           <div class="row">
-              <div class="col-md-12 suppliers-slider vcenter">
-                {{--  <div class="suppliers-slider">  --}}
-                    <img src="/img/suppliers/Supplier1.png" alt="" class="supplier-logo">
-                    <img src="/img/suppliers/Supplier2.jpg" alt="" class="supplier-logo">
-                    <img src="/img/suppliers/Supplier3.jpg" alt="" class="supplier-logo">
-                    <img src="/img/suppliers/Supplier4.jpg" alt="" class="supplier-logo">
-                    <img src="/img/suppliers/Supplier5.png" alt="" class="supplier-logo">
-                {{--  </div>  --}}
+              <div class="col-md-12">
+                <div class="suppliers-slider">
+                    <img src="/img/suppliers/Supplier1.png" alt="" class="img img-responsive img-thumbnail" style="height: 170px;">
+                    <img src="/img/suppliers/Supplier2.jpg" alt="" class="img img-responsive img-thumbnail" style="height: 170px;">
+                    <img src="/img/suppliers/Supplier3.jpg" alt="" class="img img-responsive img-thumbnail" style="height: 170px;">
+                    <img src="/img/suppliers/Supplier4.jpg" alt="" class="img img-responsive img-thumbnail" style="height: 170px;">
+                    <img src="/img/suppliers/Supplier5.png" alt="" class="img img-responsive img-thumbnail" style="height: 170px;">
+                </div>
             </div>
       </div>
   </section>
