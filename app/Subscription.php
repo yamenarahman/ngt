@@ -2,13 +2,13 @@
 
 namespace App;
 
-use App\Events\MessageCreated;
+use App\Events\SubscriptionCreated;
 use Illuminate\Database\Eloquent\Model;
 
-class Message extends Model
+class Subscription extends Model
 {
     protected $guarded = [];
     protected $dispatchesEvents = [
-        'created' => MessageCreated::class
+        'created' => SubscriptionCreated::class
     ];
 }

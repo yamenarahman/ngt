@@ -26,7 +26,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
-    <link href="favicon.ico" rel="shortcut icon">
+    <link href="/img/ngt-logo.png" rel="shortcut icon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
@@ -89,10 +89,7 @@
                         <a href="#products">Products</a>
                     </li>
                     <li>
-                        <a href="#testimonials">Partners</a>
-                    </li>
-                    <li>
-                        <a href="#team">Team</a>
+                        <a href="#suppliers">Suppliers</a>
                     </li>
                     {{--  <li class="menu-has-children">
                         <a href="">Drop Down</a>
@@ -267,7 +264,8 @@
                         {{ csrf_field() }}
                         <input type="email" class="form-control" name="email" id="subscriber-email" placeholder="Your Email" required>
                     </form>
-                    <a class="subscribe-btn" onclick="subscribe()">Subscribe to newsletter</a>
+                    <a href="/subscribe" class="subscribe-btn" onclick="event.preventDefault();
+                    document.getElementById('subscription-form').submit();">Subscribe to newsletter</a>
                 </div>
             </div>
         </div>
@@ -509,25 +507,19 @@
                 </div>
                 <div class="col-md-5 col-md-push-2">
                     <div class="form">
-                        <div id="sendmessage">Your message has been sent. Thank you!</div>
-                        <div id="errormessage"></div>
                         <form action="{{ url('/sendmessage') }}" method="POST" role="form" class="contactForm">
                             {{ csrf_field() }}
                             <div class="form-group">
-                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
-                                <div class="validation"></div>
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required>
-                                <div class="validation"></div>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" required>
-                                <div class="validation"></div>
+                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us" placeholder="Message" required></textarea>
-                                <div class="validation"></div>
+                                <textarea class="form-control" name="body" rows="10" placeholder="Message" required></textarea>
                             </div>
                             <div class="text-center">
                                 <button type="submit">Send Message</button>
@@ -574,25 +566,10 @@
     <script src="/lib/stickyjs/sticky.js"></script>
     <script src="/lib/easing/easing.js"></script>
     <script src="/js/custom.js"></script>
-    <script src="/js/contactform.js"></script>
+    {{--  <script src="/js/contactform.js"></script>  --}}
     <script src="/js/bootstrap-popover-x.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script>
-        function subscribe() {
-            var email = $('#subscriber-email');
-            if(email.val() == '') {
-                swal("Ops!", "Please fill your email!", "error");
-            } else {
-                event.preventDefault();
-                $('#subscription-form').submit();
-            }
-        }
-
-        function validateEmail (email) {
-
-        }
-    </script>
     <script>
         $(document).ready(function(){
             $('.suppliers-slider').slick({
@@ -623,26 +600,28 @@
             });
         });
     </script>
+
+    @if(session('message'))
+    <script>
+        swal({
+            title: '{{ session('title') }}',
+            text: '{{ session('message') }}',
+            icon: '{{ session('type') }}'
+        });
+    </script>
+    @endif
+
+    @if($errors->any())
+    <script>
+        @foreach($errors->all() as $error)
+            swal({
+                title: 'Oops',
+                text: '{{ $error }}',
+                icon: 'error'
+            });
+        @endforeach
+    </script>
+    @endif
 </body>
 
 </html>
-
-{{--  function validateEmail(email) {
-  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return re.test(email);
-}
-
-function validate() {
-  $("#result").text("");
-  var email = $("#email").val();
-  if (validateEmail(email)) {
-    $("#result").text(email + " is valid :)");
-    $("#result").css("color", "green");
-  } else {
-    $("#result").text(email + " is not valid :(");
-    $("#result").css("color", "red");
-  }
-  return false;
-}
-
-$("#validate").bind("click", validate);  --}}

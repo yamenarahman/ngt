@@ -2,7 +2,11 @@
 
 namespace App\Providers;
 
+use App\Message;
+use App\Subscription;
+use App\Observers\MessageObserver;
 use Illuminate\Support\ServiceProvider;
+use App\Observers\SubscriptionObserver;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -13,7 +17,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        Subscription::observe(SubscriptionObserver::class);
+        Message::observe(MessageObserver::class);
     }
 
     /**
