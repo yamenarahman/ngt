@@ -7,6 +7,7 @@ use App\Subscription;
 use App\Observers\MessageObserver;
 use Illuminate\Support\ServiceProvider;
 use App\Observers\SubscriptionObserver;
+use Illuminate\Support\Facades\Schema;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -19,6 +20,7 @@ class AppServiceProvider extends ServiceProvider
     {
         Subscription::observe(SubscriptionObserver::class);
         Message::observe(MessageObserver::class);
+        Schema::defaultStringLength(191);
     }
 
     /**
